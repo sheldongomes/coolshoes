@@ -1,0 +1,10 @@
+br/com/fiap/coolshoes/CoolshoesApplication.java
+ br.com.fiap.coolshoes.CoolshoesApplication
+br/com/fiap/coolshoes/dto/ProductDTO.java
+ br.com.fiap.coolshoes.dto.ProductDTO
+br/com/fiap/coolshoes/dto/ProductCreateUpdateDTO.java
+ br.com.fiap.coolshoes.dto.ProductCreateUpdateDTO
+br/com/fiap/coolshoes/dto/ProductPriceUpdateDTO.java
+ br.com.fiap.coolshoes.dto.ProductPriceUpdateDTO
+br/com/fiap/coolshoes/controller/ProductController.java
+ br.com.fiap.coolshoes.controller.ProductController
