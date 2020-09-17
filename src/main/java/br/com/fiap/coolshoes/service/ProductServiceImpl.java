@@ -12,7 +12,7 @@ import java.util.stream.Collectors;
 @Service
 public class ProductServiceImpl implements ProductService {
 
-    private List<ProductDTO> productDTOS = new ArrayList<>();
+    private List<ProductDTO> productDTOS =  new ArrayList<>();
 
     @Override
     public List<ProductDTO> findAll(Integer numero) {
