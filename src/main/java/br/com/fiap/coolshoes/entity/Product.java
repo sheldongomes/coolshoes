@@ -1,26 +1,25 @@
-package br.com.fiap.coolshoes.dto;
+package br.com.fiap.coolshoes.entity;
 
-import br.com.fiap.coolshoes.entity.Product;
-
+import javax.persistence.*;
 import java.math.BigDecimal;
 
-public class ProductDTO {
+@Entity
+@Table(name = "TB_PRODUCT")
+public class Product {
 
+    @Id
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
+
     private String modelo;
+
     private Integer numero;
+
     private String cor;
+
     private BigDecimal preco;
 
-    public ProductDTO(){}
-
-    public ProductDTO(Product product) {
-        this.id = product.getId();
-        this.modelo = product.getModelo();
-        this.numero = product.getNumero();
-        this.cor = product.getCor();
-        this.preco = product.getPreco();
-    }
+    private Boolean ativo;
 
     public Long getId() {
         return id;
@@ -60,5 +59,13 @@ public class ProductDTO {
 
     public void setPreco(BigDecimal preco) {
         this.preco = preco;
+    }
+
+    public Boolean getAtivo() {
+        return ativo;
+    }
+
+    public void setAtivo(Boolean ativo) {
+        this.ativo = ativo;
     }
 }
