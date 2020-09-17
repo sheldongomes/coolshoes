@@ -1,7 +1,8 @@
-br/com/fiap/coolshoes/service/ProductServiceImpl.java
- br.com.fiap.coolshoes.service.ProductServiceImpl
+br/com/fiap/coolshoes/config/SwaggerUiWebMvcConfigurer.java
+ br.com.fiap.coolshoes.config.SwaggerUiWebMvcConfigurer
 br/com/fiap/coolshoes/dto/ProductCreateUpdateDTO.java
  br.com.fiap.coolshoes.dto.ProductCreateUpdateDTO
+<<<<<<< HEAD
 br/com/fiap/coolshoes/controller/DebugController.java
  br.com.fiap.coolshoes.controller.DebugController
 br/com/fiap/coolshoes/controller/ProductController.java
@@ -18,3 +19,23 @@ br/com/fiap/coolshoes/CoolshoesApplication.java
  br.com.fiap.coolshoes.CoolshoesApplication
 br/com/fiap/coolshoes/entity/Product.java
  br.com.fiap.coolshoes.entity.Product
+=======
+br/com/fiap/coolshoes/dto/ProductPriceUpdateDTO.java
+ br.com.fiap.coolshoes.dto.ProductPriceUpdateDTO
+br/com/fiap/coolshoes/CoolshoesApplication.java
+ br.com.fiap.coolshoes.CoolshoesApplication
+br/com/fiap/coolshoes/controller/DebugController.java
+ br.com.fiap.coolshoes.controller.DebugController
+br/com/fiap/coolshoes/service/ProductServiceImpl.java
+ br.com.fiap.coolshoes.service.ProductServiceImpl
+br/com/fiap/coolshoes/controller/ProductController.java
+ br.com.fiap.coolshoes.controller.ProductController
+br/com/fiap/coolshoes/entity/Product.java
+ br.com.fiap.coolshoes.entity.Product
+br/com/fiap/coolshoes/service/ProductService.java
+ br.com.fiap.coolshoes.service.ProductService
+br/com/fiap/coolshoes/dto/ProductDTO.java
+ br.com.fiap.coolshoes.dto.ProductDTO
+br/com/fiap/coolshoes/repository/ProductRepository.java
+ br.com.fiap.coolshoes.repository.ProductRepository
+>>>>>>> upstream/master

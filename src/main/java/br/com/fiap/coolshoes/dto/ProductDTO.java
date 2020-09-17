@@ -1,5 +1,7 @@
 package br.com.fiap.coolshoes.dto;
 
+import br.com.fiap.coolshoes.entity.Product;
+
 import java.math.BigDecimal;
 
 public class ProductDTO {
@@ -9,6 +11,16 @@ public class ProductDTO {
     private Integer numero;
     private String cor;
     private BigDecimal preco;
+
+    public ProductDTO(){}
+
+    public ProductDTO(Product product) {
+        this.id = product.getId();
+        this.modelo = product.getModelo();
+        this.numero = product.getNumero();
+        this.cor = product.getCor();
+        this.preco = product.getPreco();
+    }
 
     public Long getId() {
         return id;
