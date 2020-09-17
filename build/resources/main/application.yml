@@ -4,25 +4,19 @@ server:
 fiap:
   debug: false
 
-<<<<<<< HEAD
-spring:
-  datasource:
-    url: jdbc:h2:C:\Users\sheldon.gomes.ALCNET\Documents\h2;DB_CLOSE_ON_EXIT=FALSE
-    username: fiap
-    password: fiap
-=======
-springfox:
-  documentation:
-    swagger-ui:
-      enabled: true
 
 spring:
   datasource:
-    url: jdbc:h2:~/fiapcoolshoesdb;DB_CLOSE_ON_EXIT=FALSE
+    url: jdbc:h2:C:\Users\sheldon.gomes.ALCNET\Documents\h2;DB_CLOSE_ON_EXIT=FALSE
     username: fiap
     password: fiap
   jpa:
     hibernate:
       ddl-auto: update
     show-sql: true
->>>>>>> upstream/master
+
+springfox:
+  documentation:
+    swagger-ui:
+      enabled: true
+
