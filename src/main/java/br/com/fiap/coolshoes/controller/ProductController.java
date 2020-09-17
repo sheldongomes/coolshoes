@@ -4,6 +4,8 @@ import br.com.fiap.coolshoes.dto.ProductCreateUpdateDTO;
 import br.com.fiap.coolshoes.dto.ProductDTO;
 import br.com.fiap.coolshoes.dto.ProductPriceUpdateDTO;
 import br.com.fiap.coolshoes.service.ProductService;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.web.bind.annotation.*;
@@ -18,6 +20,8 @@ import java.util.stream.Collectors;
 @RequestMapping("products")
 public class ProductController {
 
+    private final Logger logger = LoggerFactory.getLogger(ProductController.class);
+
     private final ProductService productService;
 
     public ProductController(ProductService productService) {
@@ -26,6 +30,7 @@ public class ProductController {
 
     @GetMapping
     public List<ProductDTO> listAll(@RequestParam(required = false) Integer numero){
+        logger.info("Hello");
         return productService.findAll(numero);
     }
 
