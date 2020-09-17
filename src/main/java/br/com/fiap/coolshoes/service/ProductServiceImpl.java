@@ -43,6 +43,7 @@ public class ProductServiceImpl implements ProductService {
         product.setPreco(productCreateUpdateDTO.getPreco());
         product.setModelo(productCreateUpdateDTO.getModelo());
         product.setNumero(productCreateUpdateDTO.getNumero());
+        product.setAtivo(true);
 
         Product savedProduct = productRepository.save(product);
 

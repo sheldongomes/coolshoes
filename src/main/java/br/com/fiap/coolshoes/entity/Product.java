@@ -1,9 +1,15 @@
 package br.com.fiap.coolshoes.entity;
 
+import org.springframework.data.annotation.CreatedDate;
+import org.springframework.data.annotation.LastModifiedDate;
+import org.springframework.data.jpa.domain.support.AuditingEntityListener;
+
 import javax.persistence.*;
 import java.math.BigDecimal;
+import java.util.Date;
 
 @Entity
+@EntityListeners(AuditingEntityListener.class)
 @Table(name = "TB_PRODUCT")
 public class Product {
 
@@ -20,6 +26,30 @@ public class Product {
     private BigDecimal preco;
 
     private Boolean ativo;
+
+    @CreatedDate
+    @Column(name = "data_criacao", nullable = false, updatable = false)
+    private Date dataCriacao;
+
+    @LastModifiedDate
+    @Column(name = "data_atualizacao")
+    private Date dataAtualizacao;
+
+    public Date getDataCriacao() {
+        return dataCriacao;
+    }
+
+    public void setDataCriacao(Date dataCriacao) {
+        this.dataCriacao = dataCriacao;
+    }
+
+    public Date getDataAtualizacao() {
+        return dataAtualizacao;
+    }
+
+    public void setDataAtualizacao(Date dataAtualizacao) {
+        this.dataAtualizacao = dataAtualizacao;
+    }
 
     public Long getId() {
         return id;

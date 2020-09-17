@@ -15,7 +15,8 @@ public interface ProductRepository extends JpaRepository<Product, Long> {
 
     List<Product> findAllByNumero(Integer numero);
 
-    @Query("from Product where numero = :numero")
+    @Query("from Product " +
+            "where numero = :numero")
     List<Product> buscaPorNumero(Integer numero);
 
 }
